@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "watch": "DEBUG=ajbkr-com:* nodemon ./bin/www",
-    "start": "node ./bin/www"
+    "build": "npm run copy-milligram && npm run copy-normalize",
+    "copy-milligram": "cpx 'node_modules/milligram/dist/milligram.min.css*' public/stylesheets/",
+    "copy-normalize": "cpx 'node_modules/normalize.css/normalize.css' public/stylesheets/",
+    "start": "node ./bin/www",
+    "watch": "DEBUG=ajbkr-com:* nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -16,6 +19,9 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "cpx": "^1.5.0",
+    "milligram": "^1.1.0",
+    "nodemon": "^1.11.0",
+    "normalize.css": "^5.0.0"
   }
 }
