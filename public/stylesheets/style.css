@@ -1,3 +1,7 @@
 body {
   padding: 2.4rem;
 }
+
+.bold {
+  font-weight: 700;
+}
