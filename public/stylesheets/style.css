@@ -2,6 +2,10 @@ body {
   padding: 2.4rem;
 }
 
+pre {
+  overflow: auto;
+}
+
 .bold {
   font-weight: 700;
 }
