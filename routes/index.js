@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'ajbkr.com' });
+  res.render('index', { title: "Andrew J. Baker's personal Web site" });
 });
 
 module.exports = router;
