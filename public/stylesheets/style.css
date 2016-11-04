@@ -9,3 +9,10 @@ pre {
 .bold {
   font-weight: 700;
 }
+
+.button-large {
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0 2rem;
+}
