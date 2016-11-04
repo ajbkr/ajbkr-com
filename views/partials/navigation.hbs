@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container navigation">
   <div class="row">
     <div class="column">
     {{#each navigation}}
-      <a class="button button-large{{#if this.active}}{{else}} button-outline{{/if}}" href="{{this.href}}">{{this.text}}</a>
+      <a class="button button-large{{#if this.active}} button-outline{{else}} button-clear{{/if}}" href="{{this.href}}">{{this.text}}</a>
     {{/each}}
     </div>
   </div>
