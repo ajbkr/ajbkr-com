@@ -7,13 +7,14 @@
   "private": true,
   "scripts": {
     "copy-milligram": "cpx 'node_modules/milligram/dist/milligram.min.css*' public/stylesheets/",
-    "copy-normalize": "cpx 'node_modules/normalize.css/normalize.css' public/stylesheets/",
-    "postinstall": "npm run copy-milligram && npm run copy-normalize",
+    "minify-normalize": "cleancss -o public/stylesheets/normalize.min.css node_modules/normalize.css/normalize.css",
+    "postinstall": "npm run copy-milligram && npm run minify-normalize",
     "start": "node ./bin/www",
     "watch": "DEBUG=ajbkr-com:* nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
+    "clean-css": "^3.4.20",
     "cookie-parser": "~1.4.3",
     "cpx": "^1.5.0",
     "debug": "^2.2.0",

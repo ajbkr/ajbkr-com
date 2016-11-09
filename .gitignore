@@ -31,4 +31,4 @@ npm-debug.log
 
 # Copied CSS
 public/stylesheets/milligram.min.css*
-public/stylesheets/normalize.css
+public/stylesheets/normalize.min.css
