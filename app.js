@@ -29,6 +29,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 
+app.use(function(req, res, next) {
+  res.setHeader('X-Frame-Options', 'DENY');
+  return next();
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not found');
