@@ -1,11 +1,12 @@
-var bodyParser   = require('body-parser');
-var compression  = require('compression');
-var cookieParser = require('cookie-parser');
-var express      = require('express');
-var favicon      = require('serve-favicon');
-var hbs          = require('hbs');
-var logger       = require('morgan');
-var path         = require('path');
+var bodyParser    = require('body-parser');
+var compression   = require('compression');
+var cookieParser  = require('cookie-parser');
+var express       = require('express');
+var favicon       = require('serve-favicon');
+var hbs           = require('hbs');
+var logger        = require('morgan');
+var path          = require('path');
+var xFrameOptions = require('x-frame-options');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -25,14 +26,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(xFrameOptions());
 
 app.use('/', index);
 app.use('/users', users);
-
-app.use(function(req, res, next) {
-  res.setHeader('X-Frame-Options', 'DENY');
-  return next();
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

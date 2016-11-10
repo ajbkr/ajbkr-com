@@ -24,7 +24,8 @@
     "milligram": "^1.1.0",
     "morgan": "~1.7.0",
     "normalize.css": "^5.0.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "x-frame-options": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
