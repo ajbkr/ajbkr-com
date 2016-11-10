@@ -1,12 +1,12 @@
-var bodyParser    = require('body-parser');
-var compression   = require('compression');
-var cookieParser  = require('cookie-parser');
-var express       = require('express');
-var favicon       = require('serve-favicon');
-var hbs           = require('hbs');
-var logger        = require('morgan');
-var path          = require('path');
-var xFrameOptions = require('x-frame-options');
+var bodyParser   = require('body-parser');
+var compression  = require('compression');
+var cookieParser = require('cookie-parser');
+var express      = require('express');
+var favicon      = require('serve-favicon');
+var hbs          = require('hbs');
+var helmet       = require('helmet');
+var logger       = require('morgan');
+var path         = require('path');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -23,10 +23,10 @@ hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(compression());
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(xFrameOptions());
+app.use(helmet());
 
 app.use('/', index);
 app.use('/users', users);
