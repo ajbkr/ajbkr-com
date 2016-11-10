@@ -30,8 +30,7 @@ router.get('/', function(req, res, next) {
       attribution: 'J. R. R. Tolkien, The Fellowship of the Ring',
       text: 'Do not meddle in the affairs of wizards, for they are subtle ' +
        'and quick to anger.',
-    },
-    title: "Andrew J. Baker's personal Web site"
+    }
   });
 });
 
