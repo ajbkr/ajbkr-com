@@ -8,6 +8,7 @@
   "scripts": {
     "copy-milligram": "cpx 'node_modules/milligram/dist/milligram.min.css*' public/stylesheets/",
     "minify-normalize": "cleancss -o public/stylesheets/normalize.min.css node_modules/normalize.css/normalize.css",
+    "nsp": "nsp check --output summary",
     "postinstall": "npm run copy-milligram && npm run minify-normalize",
     "start": "node ./bin/www",
     "watch": "DEBUG=ajbkr-com:* nodemon ./bin/www"
@@ -18,7 +19,7 @@
     "compression": "^1.6.2",
     "cookie-parser": "~1.4.3",
     "cpx": "^1.5.0",
-    "debug": "^2.2.0",
+    "debug": "^2.3.2",
     "express": "~4.14.0",
     "hbs": "~4.0.1",
     "helmet": "^3.1.0",
@@ -28,6 +29,7 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "nsp": "^2.6.2"
   }
 }
