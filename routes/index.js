@@ -6,11 +6,8 @@ function getNavigation(url) {
     href: '/',
     text: 'Home'
   }, {
-    href: '/brain-dumps',
-    text: 'Brain dumps'
-  }, {
-    href: '/cheat-sheets',
-    text: 'Cheat sheets'
+    href: '/projects',
+    text: 'Projects'
   }, {
     href: '/about',
     text: 'About'
@@ -38,26 +35,14 @@ router.get('/', function(req, res, next) {
   });
 });
 
-router.get('/brain-dumps', function(req, res, next) {
-  res.render('brain-dumps', {
+router.get('/projects', function(req, res, next) {
+  res.render('projects', {
     navigation: getNavigation(req.url),
     quotation: {
       attribution: 'Time, Alice Through the Looking Glass',
       text: 'Everyone parts with everything eventually, my dear.'
     },
-    title: 'Brain dumps'
-  });
-});
-
-router.get('/cheat-sheets', function(req, res, next) {
-  res.render('cheat-sheets', {
-    navigation: getNavigation(req.url),
-    quotation: {
-      attribution: 'Terminator 2: Judgment Day',
-      text: 'Skynet begins to learn at a geometric rate. It becomes ' +
-       'self-aware at 2:14am Eastern time, August 29th.'
-    },
-    title: 'Cheat sheets'
+    title: 'Projects'
   });
 });
 
