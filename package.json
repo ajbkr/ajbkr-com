@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "body-parser": "~1.15.2",
-    "clean-css": "^3.4.20",
+    "clean-css": "^3.4.21",
     "compression": "^1.6.2",
     "cookie-parser": "~1.4.3",
     "cpx": "^1.5.0",
@@ -23,10 +23,10 @@
     "express": "~4.14.0",
     "hbs": "~4.0.1",
     "helmet": "^3.1.0",
-    "milligram": "^1.1.0",
+    "milligram": "^1.2.0",
     "morgan": "~1.7.0",
     "normalize.css": "^5.0.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.2"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
