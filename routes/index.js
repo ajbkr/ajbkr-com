@@ -6,6 +6,9 @@ function getNavigation(url) {
     href: '/',
     text: 'Home'
   }, {
+    href: '/personal-development',
+    text: 'Personal Development'
+  }, {
     href: '/projects',
     text: 'Projects'
   }, {
@@ -31,6 +34,18 @@ router.get('/', function(req, res, next) {
       text: 'Do not meddle in the affairs of wizards, for they are subtle ' +
        'and quick to anger.',
     }
+  });
+});
+
+router.get('/personal-development', function(req, res, next) {
+  res.render('personal-development', {
+    navigation: getNavigation(req.url),
+    quotation: {
+      attribution: 'Chuck Palahniuk, Fight Club',
+      text: 'I say never be complete, I say stop being perfect, I say ' +
+       "let... let's evolve, let the chips fall where they may."
+    },
+    title: 'Personal Development'
   });
 });
 
