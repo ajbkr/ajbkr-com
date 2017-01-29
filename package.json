@@ -6,10 +6,12 @@
   },
   "private": true,
   "scripts": {
+    "copy-fonts": "cpx 'node_modules/flat-social-icons/fonts/*' public/stylesheets/fonts/",
     "copy-milligram": "cpx 'node_modules/milligram/dist/milligram.min.css*' public/stylesheets/",
     "minify-normalize": "cleancss -o public/stylesheets/normalize.min.css node_modules/normalize.css/normalize.css",
+    "minify-flat-icons": "cleancss -o public/stylesheets/flat-icons.min.css --skip-rebase node_modules/flat-social-icons/flat-icons.css",
     "nsp": "nsp check --output summary",
-    "postinstall": "npm run copy-milligram && npm run minify-normalize",
+    "postinstall": "npm run copy-fonts && npm run copy-milligram && npm run minify-flat-icons && npm run minify-normalize",
     "start": "node ./bin/www",
     "watch": "DEBUG=ajbkr-com:* nodemon ./bin/www"
   },
@@ -21,6 +23,7 @@
     "cpx": "^1.5.0",
     "debug": "^2.3.3",
     "express": "~4.14.1",
+    "flat-social-icons": "0.0.1",
     "hbs": "~4.0.1",
     "helmet": "^3.1.0",
     "milligram": "^1.2.0",

@@ -30,5 +30,7 @@ node_modules
 npm-debug.log
 
 # Copied CSS
+public/stylesheets/fonts
+public/stylesheets/flat-icons.min.css
 public/stylesheets/milligram.min.css*
 public/stylesheets/normalize.min.css
