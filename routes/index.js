@@ -3,9 +3,6 @@ var router = express.Router();
 
 function getNavigation(url) {
   var navigation = [{
-    href: '/',
-    text: 'Home'
-  }, {
     href: '/personal-development',
     text: 'Personal Development'
   }, {

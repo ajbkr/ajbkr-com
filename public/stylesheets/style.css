@@ -6,12 +6,20 @@ pre {
   overflow: auto;
 }
 
-.bold {
-  font-weight: 700;
+.ajbkr-com {
+  display: inline-block;
+  width: 48%;
 }
 
-.button-icon {
+.social-icons {
+  display: inline-block;
   font-family: flat-icons;
+  text-align: right;
+  width: 48%;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .button-large {
