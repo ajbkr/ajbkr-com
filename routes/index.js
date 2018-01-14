@@ -47,13 +47,25 @@ router.get('/personal-development', function(req, res, next) {
 });
 
 router.get('/projects', function(req, res, next) {
-  res.render('projects', {
+  res.render('projects/index', {
     navigation: getNavigation(req.url),
     quotation: {
       attribution: 'Time, Alice Through the Looking Glass',
       text: 'Everyone parts with everything eventually, my dear.'
     },
     title: 'Projects'
+  });
+});
+
+router.get('/projects/electronics', function(req, res, next) {
+  res.render('projects/electronics', {
+    navigation: getNavigation(req.url),
+    quotation: {
+      attribution: 'Nietzsche',
+      text: 'He who fights with monsters should be careful lest he thereby ' +
+       'become a monster'
+    },
+    title: 'Electronics - Projects'
   });
 });
 
