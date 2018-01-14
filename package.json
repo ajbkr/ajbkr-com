@@ -2,7 +2,7 @@
   "name": "ajbkr-com",
   "version": "0.0.0",
   "engines": {
-    "node": "6.11.2"
+    "node": "6.12.3"
   },
   "private": true,
   "scripts": {
@@ -17,22 +17,22 @@
   },
   "dependencies": {
     "body-parser": "~1.17.2",
-    "clean-css": "^3.4.24",
-    "compression": "^1.7.0",
+    "clean-css": "^3.4.28",
+    "compression": "^1.7.1",
     "cookie-parser": "~1.4.3",
     "cpx": "^1.5.0",
-    "debug": "^2.6.8",
-    "express": "~4.15.4",
+    "debug": "^2.6.9",
+    "express": "^4.16.2",
     "flat-social-icons": "0.0.1",
     "hbs": "~4.0.1",
-    "helmet": "^3.8.1",
+    "helmet": "^3.9.0",
     "milligram": "^1.2.0",
     "morgan": "~1.8.2",
     "normalize.css": "^7.0.0",
-    "serve-favicon": "~2.4.3"
+    "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
-    "nsp": "^2.7.0"
+    "nodemon": "^1.14.11",
+    "nsp": "^2.8.1"
   }
 }
