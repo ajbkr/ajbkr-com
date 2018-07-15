@@ -26,6 +26,7 @@ function getNavigation(url) {
 router.get('/', function(req, res, next) {
   res.render('index', {
     navigation: getNavigation(req.url),
+    production: res.app.get('env') === 'production',
     quotation: {
       attribution: 'J. R. R. Tolkien, The Fellowship of the Ring',
       text: 'Do not meddle in the affairs of wizards, for they are subtle ' +
@@ -37,6 +38,7 @@ router.get('/', function(req, res, next) {
 router.get('/personal-development', function(req, res, next) {
   res.render('personal-development', {
     navigation: getNavigation(req.url),
+    production: res.app.get('env') === 'production',
     quotation: {
       attribution: 'Chuck Palahniuk, Fight Club',
       text: 'I say never be complete, I say stop being perfect, I say ' +
@@ -49,6 +51,7 @@ router.get('/personal-development', function(req, res, next) {
 router.get('/projects', function(req, res, next) {
   res.render('projects/index', {
     navigation: getNavigation(req.url),
+    production: res.app.get('env') === 'production',
     quotation: {
       attribution: 'Time, Alice Through the Looking Glass',
       text: 'Everyone parts with everything eventually, my dear.'
@@ -60,6 +63,7 @@ router.get('/projects', function(req, res, next) {
 router.get('/projects/electronics', function(req, res, next) {
   res.render('projects/electronics', {
     navigation: getNavigation(req.url),
+    production: res.app.get('env') === 'production',
     quotation: {
       attribution: 'Nietzsche',
       text: 'He who fights with monsters should be careful lest he thereby ' +
@@ -72,6 +76,7 @@ router.get('/projects/electronics', function(req, res, next) {
 router.get('/about', function(req, res, next) {
   res.render('about', {
     navigation: getNavigation(req.url),
+    production: res.app.get('env') === 'production',
     quotation: {
       attribution: 'Aleister Crowley',
       text: 'As a God goes, I go.'

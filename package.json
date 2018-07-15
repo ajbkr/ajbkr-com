@@ -13,7 +13,7 @@
     "minify-flat-icons": "cleancss -o public/stylesheets/flat-icons.min.css --skip-rebase node_modules/flat-social-icons/flat-icons.css",
     "nsp": "nsp check --output summary",
     "postinstall": "npm run copy-fonts && npm run copy-milligram && npm run minify-flat-icons && npm run minify-normalize",
-    "start": "node ./bin/www",
+    "start": "NODE_ENV=production node ./bin/www",
     "watch": "DEBUG=ajbkr-com:* nodemon ./bin/www"
   },
   "dependencies": {
