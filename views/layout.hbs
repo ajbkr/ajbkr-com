@@ -9,30 +9,42 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>{{#if title}}{{title}} - {{/if}}ajbkr.com</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="column">
-          <h4 class="ajbkr-com"><a href="/"><span class="bold">ajbkr</span>.com</a></h4>
-          <div class="social-icons" style="display: inline-block; text-align: right; width: 49%">
-            <a href="https://github.com/ajbkr"><span class="fl-icon-github" /></a>
-            <a href="https://www.linkedin.com/in/ajbkr"><span
-             class="fl-icon-linkedin" /></a>
-            <a href="https://twitter.com/ajbkr"><span
-             class="fl-icon-twitter" /></a>
+  <body class="layout">
+    <header class="layout__header">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h4 class="ajbkr-com"><a href="/"><span class="bold">ajbkr</span>.com</a></h4>
+            <div class="social-icons" style="display: inline-block; text-align: right; width: 49%">
+              <a href="https://github.com/ajbkr"><span class="fl-icon-github" /></a>
+              <a href="https://www.linkedin.com/in/ajbkr"><span
+               class="fl-icon-linkedin" /></a>
+              <a href="https://twitter.com/ajbkr"><span
+               class="fl-icon-twitter" /></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    {{#if quotation}}
-      {{> quotation}}
-    {{/if}}
+      {{#if quotation}}
+        {{> quotation}}
+      {{/if}}
+    </header>
 
-    {{#if navigation}}
-      {{> navigation}}
-    {{/if}}
+    <main class="layout__main">
+      {{{body}}}
+    </main>
 
-    {{{body}}}
+    <aside class="layout__left">
+      {{#if navigation}}
+        {{> navigation}}
+      {{/if}}
+    </aside>
+
+    <aside class="layout__right"></aside>
+
+    <footer class="layout__footer">
+      &copy; 2018 Andrew J. Baker&nbsp;&nbsp;ALL RIGHTS RESERVED
+    </footer>
   </body>
 </html>

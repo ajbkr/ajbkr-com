@@ -1,9 +1,13 @@
 <div class="container navigation">
   <div class="row">
     <div class="column">
-    {{#each navigation}}
-      <a class="button button-large{{#if this.active}} button-outline{{else}} button-clear{{/if}}" href="{{this.href}}">{{this.text}}</a>
-    {{/each}}
+      <ul>
+      {{#each navigation}}
+        <li>
+          <a class="{{#if this.active}}navigation__item--active{{/if}}" href="{{this.href}}">{{this.text}}</a>
+        </li>
+      {{/each}}
+      </ul>
     </div>
   </div>
 </div>
