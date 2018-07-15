@@ -1,6 +1,7 @@
 Add links to relevant content elsewhere on the Internet
 Add Google Analytics
--Replace GitHub, LinkedIn, and Twitter links with social icons-
-Improve mobile experience (layout, etc.)
-Update clean-css to 4.x
 Ensure nsp passes
+
++Improve mobile experience (layout, etc.)
++Update clean-css to 4.x
++Replace GitHub, LinkedIn, and Twitter links with social icons
