@@ -67,16 +67,22 @@ pre {
 }
 
 .quotation__blockquote {
+  background-color: rgba(0, 0, 0, 0.4);
   bottom: 1rem;
   left: 1rem;
   margin: 0;
   position: absolute;
+  text-shadow: 1px 1px 1px #000;
 }
 
-.quotation__paragraph {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 0 0.5rem;
-  text-shadow: 1px 1px 1px #000;
+.quotation__text {
+  margin: 0;
+}
+
+.quotation__attribution {
+  color: #ca9b4d;
+  font-size: 1.2rem;
+  text-align: right;
 }
 
 .navigation ul {
