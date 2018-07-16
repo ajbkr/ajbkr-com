@@ -10,7 +10,7 @@ a:hover,
 
 /* Site defaults */
 body {
-  padding: 2.4rem;
+  padding: 2.4rem 0;
 }
 
 pre {
@@ -51,10 +51,32 @@ pre {
                        "left main right"
                        "footer footer footer";
   grid-template-columns: 160px 1fr 160px;
-  grid-template-rows: 160px
+  grid-template-rows: 200px
                       1fr
                       40px;
   min-height: 100vh;
+}
+
+.header__quotation {
+  background-image: url(https://res.cloudinary.com/ipseity/image/upload/v1531754646/1500x500_c3qo0e.jpg);
+  background-position: 0 -30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ddd;
+  height: 130px;
+}
+
+.quotation__blockquote {
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0;
+  position: absolute;
+}
+
+.quotation__paragraph {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 0.5rem;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .navigation ul {
