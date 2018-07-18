@@ -64,11 +64,13 @@ pre {
   background-size: cover;
   color: #ddd;
   height: 130px;
+  position: relative;
 }
 
 .quotation__blockquote {
   background-color: rgba(0, 0, 0, 0.4);
   bottom: 1rem;
+  display: inline-block;
   left: 1rem;
   margin: 0;
   position: absolute;
