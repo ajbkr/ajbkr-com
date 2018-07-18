@@ -1,13 +1,7 @@
-<div class="container navigation">
-  <div class="row">
-    <div class="column">
-      <ul>
-      {{#each navigation}}
-        <li>
-          <a class="{{#if this.active}}navigation__item--active{{/if}}" href="{{this.href}}">{{this.text}}</a>
-        </li>
-      {{/each}}
-      </ul>
-    </div>
-  </div>
-</div>
+<ul class="navigation">
+{{#each navigation}}
+  <li>
+    <a class="{{#if this.active}}navigation__item--active{{/if}}" href="{{this.href}}">{{this.text}}</a>
+  </li>
+{{/each}}
+</ul>

@@ -87,9 +87,10 @@ pre {
   text-align: right;
 }
 
-.navigation ul {
+.navigation {
   list-style: none;
   padding-top: 0.4rem;
+  padding-left: 2rem;
 }
 
 .navigation__item--active {
