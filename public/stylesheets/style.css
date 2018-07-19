@@ -63,7 +63,7 @@ pre {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ddd;
-  height: 130px;
+  height: 140px;
   position: relative;
 }
 
@@ -71,7 +71,7 @@ pre {
   background-color: rgba(0, 0, 0, 0.5);
   bottom: 1rem;
   display: inline-block;
-  left: 1rem;
+  left: 2rem;
   margin: 0;
   position: absolute;
   text-shadow: 1px 1px 1px #000;
@@ -113,5 +113,8 @@ pre {
                         40px;
   }
 
-  .header__quotation { display: none; }
+  .header__quotation {
+    background-image: none;
+    display: none;
+  }
 }
