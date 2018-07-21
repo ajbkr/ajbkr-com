@@ -3,9 +3,9 @@ var router = express.Router();
 
 function getNavigation(url) {
   var navigation = [{
-    href: '/personal-development',
+/*    href: '/personal-development',
     text: 'Personal Development'
-  }, {
+  }, {*/
     href: '/projects',
     text: 'Projects'
   }, {
