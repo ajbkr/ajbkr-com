@@ -2,8 +2,8 @@
   "name": "ajbkr-com",
   "version": "0.0.0",
   "engines": {
-    "node": "8.11.3",
-    "npm": "5.6.0"
+    "node": "8.12.0",
+    "npm": "6.4.1"
   },
   "private": true,
   "scripts": {
@@ -11,7 +11,6 @@
     "copy-milligram": "cpx 'node_modules/milligram/dist/milligram.min.css*' public/stylesheets/",
     "minify-normalize": "cleancss -o public/stylesheets/normalize.min.css node_modules/normalize.css/normalize.css",
     "minify-flat-icons": "cleancss -o public/stylesheets/flat-icons.min.css --skip-rebase node_modules/flat-social-icons/flat-icons.css",
-    "nsp": "nsp check --output summary",
     "postinstall": "npm run copy-fonts && npm run copy-milligram && npm run minify-flat-icons && npm run minify-normalize",
     "start": "node ./bin/www",
     "watch": "DEBUG=ajbkr-com:* nodemon ./bin/www"
@@ -33,7 +32,6 @@
     "serve-favicon": "~2.5.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4",
-    "nsp": "^3.2.1"
+    "nodemon": "^1.18.4"
   }
 }
