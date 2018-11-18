@@ -25,13 +25,13 @@
     "express": "^4.16.4",
     "flat-social-icons": "0.0.1",
     "hbs": "~4.0.1",
-    "helmet": "^3.14.0",
+    "helmet": "^3.15.0",
     "milligram": "^1.2.0",
     "morgan": "~1.9.1",
-    "normalize.css": "^8.0.0",
+    "normalize.css": "^8.0.1",
     "serve-favicon": "~2.5.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.6"
   }
 }
