@@ -6,6 +6,7 @@ var favicon      = require('serve-favicon');
 var hbs          = require('hbs');
 var helmet       = require('helmet');
 var logger       = require('morgan');
+var minifyHTML   = require('express-minify-html');
 var path         = require('path');
 
 var index = require('./routes/index');
@@ -23,6 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(compression());
 app.use(cookieParser());
+app.get('env') === 'production' && app.use(minifyHTML({ override: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet());
 
