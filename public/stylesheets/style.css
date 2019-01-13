@@ -1,4 +1,8 @@
 /* Override Milligram */
+hr {
+  border-top: 0.1rem solid #d9dcdf;
+}
+
 .container {
   max-width: none;
 }
@@ -117,4 +121,39 @@ pre {
     background-image: none;
     display: none;
   }
+}
+
+/* LinkedOut profile */
+.recruiters {
+  color: hsl(207, 10%, 22%);
+}
+
+.intro__name {
+  font-size: 3.6rem;
+}
+
+.experience__title,
+.education__school,
+.volunteer-experience__role {
+  font-size: 2.2rem;
+}
+
+.intro__headline,
+.experience__company,
+.education__degree-field-of-study,
+.volunteer-experience__organisation,
+.certification__name {
+  color: hsl(207, 10%, 32%);
+  font-size: 1.8rem;
+}
+
+.intro__current-position,
+.experience__from-to,
+.experience__location,
+.education__from-year-to-year,
+.volunteer-experience__date,
+.volunteer-experience__cause,
+.certification__credential-id,
+.certification__issuing-organisation {
+  color: hsl(207, 10%, 52%);
 }

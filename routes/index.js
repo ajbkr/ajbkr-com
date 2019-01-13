@@ -6,6 +6,10 @@ function getNavigation(url) {
 /*    href: '/personal-development',
     text: 'Personal Development'
   }, {*/
+    hidden: true,
+    href: '/linkedout',
+    text: 'LinkedOut'
+  }, {
     href: '/projects',
     text: 'Projects'
   }, {
@@ -32,6 +36,21 @@ router.get('/', function(req, res, next) {
       text: 'Do not meddle in the affairs of wizards, for they are subtle ' +
        'and quick to anger.',
     }
+  });
+});
+
+router.get('/linkedout', function(req, res, next) {
+  res.render('linkedout', {
+    navigation: getNavigation(req.url),
+    production: res.app.get('env') === 'production',
+    quotation: {
+      attribution: 'Buckminster Fuller',
+      text: 'We keep inventing jobs because of this false idea that ' +
+       'everybody has to be employed at some kind of drudgery because, ' +
+       'according to Malthusian-Darwinian theory he must justify his right ' +
+       'to exist.'
+    },
+    title: 'LinkedOut'
   });
 });
 

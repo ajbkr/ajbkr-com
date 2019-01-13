@@ -1,7 +1,9 @@
 <ul class="navigation">
 {{#each navigation}}
-  <li>
-    <a class="{{#if this.active}}navigation__item--active{{/if}}" href="{{this.href}}">{{this.text}}</a>
-  </li>
+  {{#unless this.hidden}}
+    <li>
+      <a class="{{#if this.active}}navigation__item--active{{/if}}" href="{{this.href}}">{{this.text}}</a>
+    </li>
+  {{/unless}}
 {{/each}}
 </ul>
