@@ -22,18 +22,6 @@ pre {
 }
 
 /* Pre-holy grail layout */
-.ajbkr-com {
-  display: inline-block;
-  width: 48%;
-}
-
-.social-icons {
-  display: inline-block;
-  font-family: flat-icons;
-  text-align: right;
-  width: 48%;
-}
-
 .bold {
   font-weight: 700;
 }
@@ -59,6 +47,22 @@ pre {
                       1fr
                       40px;
   min-height: 100vh;
+}
+
+/* Header and social icons */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.social-icons {
+  font-family: flat-icons;
+  list-style: none;
+}
+
+.social-icons__list-item {
+  display: inline;
 }
 
 .header__quotation {

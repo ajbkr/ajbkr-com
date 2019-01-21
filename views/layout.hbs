@@ -29,19 +29,14 @@ gtag('config', 'UA-15078309-4');
   </head>
   <body class="layout">
     <header class="layout__header">
-      <div class="container">
-        <div class="row">
-          <div class="column">
-            <h4 class="ajbkr-com"><a href="/"><span class="bold">ajbkr</span>.com</a></h4>
-            <div class="social-icons"
-             style="display: inline-block; text-align: right; width: 49%">
-              <a href="https://github.com/ajbkr"><span
-               class="fl-icon-github">&nbsp;</span></a>
-              <a href="https://www.linkedin.com/in/ajbkr"><span
-               class="fl-icon-linkedin">&nbsp;</span></a>
-            </div>
-          </div>
-        </div>
+      <div class="header__container">
+        <h4 class="header__title"><a href="/"><span class="bold">ajbkr</span>.com</a></h4>
+        <ul class="social-icons">
+          <li class="social-icons__list-item"><a class="fl-icon-github"
+           href="https://github.com/ajbkr"></a></li>
+          <li class="social-icons__list-item"><a class="fl-icon-linkedin"
+           href="https://www.linkedin.com/in/ajbkr"></a></li>
+        </ul>
       </div>
 
       {{#if quotation}}
