@@ -63,6 +63,7 @@ pre {
 
 .social-icons__list-item {
   display: inline;
+  padding-left: 0.75rem;
 }
 
 .header__quotation {
