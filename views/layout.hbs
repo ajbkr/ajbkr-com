@@ -5,11 +5,13 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15078309-4"></script>
     <script>
+/* eslint-disable */
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'UA-15078309-4');
+/* eslint-enable */
     </script>
 {{/if}}
     <!--[if IE]><link rel="shortcut icon" href="/favicons/favicon.ico" /><![endif]>-->
@@ -61,6 +63,6 @@ gtag('config', 'UA-15078309-4');
     </footer>
   </body>
   <script>
-document.querySelector('.year').innerHTML = (new Date()).getFullYear() + ' ';
+document.querySelector('.year').innerHTML = new Date().getFullYear() + ' '
   </script>
 </html>
