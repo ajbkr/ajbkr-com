@@ -1,8 +1,8 @@
-var express = require('express')
-var router = express.Router()
+const express = require('express')
+const router = express.Router()
 
 function getNavigation (url) {
-  var navigation = [{
+  const navigation = [{
     /*    href: '/personal-development',
     text: 'Personal Development'
   }, { */
@@ -17,7 +17,7 @@ function getNavigation (url) {
     text: 'About'
   }]
 
-  for (var i = 0; i < navigation.length; ++i) {
+  for (let i = 0; i < navigation.length; ++i) {
     if (navigation[i].href === url) {
       navigation[i].active = true
       break
