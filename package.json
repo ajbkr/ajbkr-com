@@ -26,7 +26,7 @@
     "express": "^4.16.4",
     "express-minify-html": "^0.12.0",
     "flat-social-icons": "0.0.1",
-    "hbs": "~4.0.1",
+    "hbs": "~4.0.3",
     "helmet": "^3.15.0",
     "milligram": "^1.2.0",
     "morgan": "~1.9.1",
