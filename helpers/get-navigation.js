@@ -14,13 +14,15 @@ function getNavigation (url) {
     text: 'About'
   }]
 
-  for (let i = 0; i < navigation.length; ++i) {
-    if (navigation[i].href === url) {
-      navigation[i].active = true
-      break
+  const activeNavigation = navigation.filter(o => o.href === url)[0]
+
+  return activeNavigation ? [
+    ...navigation.filter(o => o.href !== url),
+    {
+      ...activeNavigation,
+      active: true
     }
-  }
-  return navigation
+  ] : navigation
 }
 
 module.exports = getNavigation
