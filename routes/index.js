@@ -1,30 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-function getNavigation (url) {
-  const navigation = [{
-    /*    href: '/personal-development',
-    text: 'Personal Development'
-  }, { */
-    hidden: true,
-    href: '/linkedout',
-    text: 'LinkedOut'
-  }, {
-    href: '/projects',
-    text: 'Projects'
-  }, {
-    href: '/about',
-    text: 'About'
-  }]
-
-  for (let i = 0; i < navigation.length; ++i) {
-    if (navigation[i].href === url) {
-      navigation[i].active = true
-      break
-    }
-  }
-  return navigation
-}
+const getNavigation = require('../helpers/get-navigation')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {

@@ -1,7 +1,8 @@
+Replace jasmine-node with jasmine (or some other unit testing framework)
 Add links to relevant content elsewhere on the Internet
-Move getNavigation() into its own file (get-navigation.js) and add unit tests for it
 Remove Milligram
 
++Move getNavigation() into its own file (get-navigation.js) and add unit tests for it
 +BEMify header
 +Restore LinkedIn profile
 +Add LinkedOut profile
