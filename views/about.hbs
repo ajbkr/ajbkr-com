@@ -4,88 +4,31 @@
     I use these at work:
   </p>
   <ul>
-    <li><a href="http://backbonejs.org/">Backbone.js</a></li>
-    <li><a href="https://www.djangoproject.com/">Django</a></li>
-    <li><a href="https://www.freebsd.org/">FreeBSD</a></li>
-    <li><a href="https://git-scm.com/">Git</a></li>
-    <li>Gulp</li>
-    <li><a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
-    <li><a href="https://jestjs.io/">Jest</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Jira_(software)">Jira</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://www.python.org/">Python</a></li>
-    <li>React</li>
-    <li>Redux</li>
-    <li><a href="https://github.com/tmux/tmux/wiki">tmux</a></li>
-    <li>Vim</li>
-    <li>webpack</li>
+  {{#each things.work}}
+    <li>
+      {{~#if this.url}}<a href="{{this.url}}">{{/if}}{{this.name}}{{#if this.url}}</a>{{/if~}}
+    </li>
+  {{/each}}
   </ul>
   <p>
     These at home:
   </p>
   <ul>
-    <li><a href="https://www.arduino.cc/">Arduino</a></li>
-    <li>AVR assembly language</li>
-    <li>C/C++</li>
-    <li>Express</li>
-    <li>GNU/Linux</li>
-    <li>Node.js</li>
-    <li>SDL</li>
+  {{#each things.home}}
+    <li>
+      {{~#if this.url}}<a href="{{this.url}}">{{/if}}{{this.name}}{{#if this.url}}</a>{{/if~}}
+    </li>
+  {{/each}}
   </ul>
   <p>
     And over the past few decades, I've used these:
   </p>
   <ul>
-    <li><a href="https://angularjs.org/">AngularJS</a></li>
-    <li>ArgoUML</li>
-    <li>awk</li>
-    <li>BASIC</li>
-    <li><a href="https://en.wikipedia.org/wiki/Borland_Graphics_Interface">Borland Graphics Interface (BGI)</a></li>
-    <li>Bochs</li>
-    <li>Bourne shell</li>
-    <li>C#</li>
-    <li><a href="http://www.codesmithtools.com/product/generator">CodeSmith
-     Generator</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Amstrad_PCW#CP/M_operating_system_and_applications">CP/M</a></li>
-    <li>Ext JS</li>
-    <li>DataFlex</li>
-    <li>Delphi</li>
-    <li>Forth</li>
-    <li>GIMP</li>
-    <li>Grunt</li>
-    <li>HP-UX</li>
-    <li>Java</li>
-    <li><a href="https://en.wikipedia.org/wiki/Kermit_(protocol)">Kermit</a></li>
-    <li><a href="http://dinosaur.compilertools.net/">lex/yacc</a></li>
-    <li>MCL-Designer</li>
-    <li>Microchip PIC assembly language</li>
-    <li><a href="https://www.moovweb.com/">Moovweb</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/MPLAB">MPLAB</a></li>
-    <li>MS-DOS</li>
-    <li>.NET</li>
-    <li><a href="https://github.com/nettiers/nettiers">.netTiers</a></li>
-    <li>NUnit</li>
-    <li>Perl/CGI</li>
-    <li><a href="http://php.net/">PHP</a></li>
-    <li><a href="https://phonegap.com/">PhoneGap</a></li>
-    <li>POV-Ray</li>
-    <li>[Novadigm] <a href="https://en.wikipedia.org/wiki/HP_Client_Automation_Software">Radia</a></li>
-    <li>SAP NetWeaver Portal</li>
-    <li>Sass</li>
-    <li>SCO OpenServer</li>
-    <li><a href="https://www.silverstripe.org/">SilverStripe</a></li>
-    <li><a href="https://www.slimframework.com/">Slim</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/SQL">SQL</a> (Microsoft SQL
-     Server, MySQL, and SQLite)</li>
-    <li><a href="https://trello.com/">Trello</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Turbo_Pascal">Turbo Pascal</a></li>
-    <li><a href="https://twig.symfony.com/">Twig</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Visual_Basic#1990s">Visual
-     Basic</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Windows_3.1x">Windows</a></li>
-    <li><a href="https://msdn.microsoft.com/en-us/library/jj684582.aspx">Windows
-     Workflow Foundation</a></li>
-    <li>x86 assembly language</li>
+  {{#each things.decades}}
+    <li>
+      {{~#if this.url}}<a href="{{this.url}}">{{/if}}{{this.name}}{{#if this.url}}</a>{{/if~}}
+    </li>
+  {{/each}}
   </ul>
   <p>
     Plus plenty more I've likely forgotten.

@@ -3,6 +3,8 @@ const router = express.Router()
 
 const getNavigation = require('../helpers/get-navigation')
 
+const things = require('./things.json')
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('index', {
@@ -76,6 +78,11 @@ router.get('/about', function (req, res, next) {
     quotation: {
       attribution: 'Aleister Crowley',
       text: 'As a God goes, I go.'
+    },
+    things: {
+      decades: things.filter(o => o.category !== 'home' && o.category !== 'work'),
+      home: things.filter(o => o.category === 'home'),
+      work: things.filter(o => o.category === 'work')
     },
     title: 'About'
   })

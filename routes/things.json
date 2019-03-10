@@ -1,0 +1,237 @@
+[{
+  "category": "work",
+  "name": "Backbone.js",
+  "url": "https://backbonejs.org/"
+}, {
+  "category": "work",
+  "name": "Django",
+  "url": "https://www.djangoproject.com/"
+}, {
+  "category": "work",
+  "name": "FreeBSD",
+  "url": "https://www.freebsd.org/"
+}, {
+  "category": "work",
+  "name": "Git",
+  "url": "https://git-scm.com/"
+}, {
+  "category": "work",
+  "name": "Gulp"
+}, {
+  "category": "work",
+  "name": "JavaScript",
+  "url": "https://en.wikipedia.org/wiki/JavaScript"
+}, {
+  "category": "work",
+  "name": "Jest",
+  "url": "https://jestjs.io/"
+}, {
+  "category": "work",
+  "name": "Jira",
+  "url": "https://en.wikipedia.org/wiki/Jira_(software)"
+}, {
+  "category": "work",
+  "name": "PostgreSQL",
+  "url": "https://www.postgresql.org/"
+}, {
+  "category": "work",
+  "name": "Python",
+  "url": "https://www.python.org/"
+}, {
+  "category": "work",
+  "name": "React"
+}, {
+  "category": "work",
+  "name": "Redux"
+}, {
+  "category": "work",
+  "name": "tmux",
+  "url": "https://github.com/tmux/tmux/wiki"
+}, {
+  "category": "work",
+  "name": "Vim"
+}, {
+  "category": "work",
+  "name": "webpack"
+}, {
+  "category": "home",
+  "name": "Arduino",
+  "url": "https://www.arduino.cc/"
+}, {
+  "category": "home",
+  "name": "AVR assembly language"
+}, {
+  "category": "home",
+  "name": "C/C++"
+}, {
+  "category": "home",
+  "name": "Express"
+}, {
+  "category": "home",
+  "name": "GNU/Linux"
+}, {
+  "category": "home",
+  "name": "Node.js"
+}, {
+  "category": "home",
+  "name": "SDL"
+}, {
+  "category": "decades",
+  "name": "AngularJS",
+  "url": "https://angularjs.org/"
+}, {
+  "category": "decades",
+  "name": "ArgoUML"
+}, {
+  "category": "decades",
+  "name": "awk"
+}, {
+  "category": "decades",
+  "name": "BASIC"
+}, {
+  "category": "decades",
+  "name": "Borland Graphics Interface (BGI)",
+  "url": "https://en.wikipedia.org/wiki/Borland_Graphics_Interface"
+}, {
+  "category": "decades",
+  "name": "Bochs"
+}, {
+  "category": "decades",
+  "name": "Bourne shell"
+}, {
+  "category": "decades",
+  "name": "C#"
+}, {
+  "category": "decades",
+  "name": "CodeSmith Generator",
+  "url": "https://www.codesmithtools.com/product/generator"
+}, {
+  "category": "decades",
+  "name": "CP/M",
+  "url": "https://en.wikipedia.org/wiki/Amstrad_PCW#CP/M_operating_system_and_applications"
+}, {
+  "category": "decades",
+  "name": "Ext JS"
+}, {
+  "category": "decades",
+  "name": "DataFlex"
+}, {
+  "category": "decades",
+  "name": "Delphi"
+}, {
+  "category": "decades",
+  "name": "Forth"
+}, {
+  "category": "decades",
+  "name": "GIMP"
+}, {
+  "category": "decades",
+  "name": "Grunt"
+}, {
+  "category": "decades",
+  "name": "HP-UX"
+}, {
+  "category": "decades",
+  "name": "Java"
+}, {
+  "category": "decades",
+  "name": "Kermit",
+  "url": "https://en.wikipedia.org/wiki/Kermit_(protocol)"
+}, {
+  "category": "decades",
+  "name": "lex/yacc",
+  "url": "http://dinosaur.compilertools.net/"
+}, {
+  "category": "decades",
+  "name": "MCL-Designer"
+}, {
+  "category": "decades",
+  "name": "Microchip PIC assembly language"
+}, {
+  "category": "decades",
+  "name": "Moovweb",
+  "url": "https://www.moovweb.com/"
+}, {
+  "category": "decades",
+  "name": "MPLAB",
+  "url": "https://en.wikipedia.org/wiki/MPLAB"
+}, {
+  "category": "decades",
+  "name": "MS-DOS"
+}, {
+  "category": "decades",
+  "name": ".NET"
+}, {
+  "category": "decades",
+  "name": ".netTiers",
+  "url": "https://github.com/nettiers/nettiers"
+}, {
+  "category": "decades",
+  "name": "NUnit"
+}, {
+  "category": "decades",
+  "name": "Perl/CGI"
+}, {
+  "category": "decades",
+  "name": "PHP",
+  "url": "http://php.net/"
+}, {
+  "category": "decades",
+  "name": "PhoneGap",
+  "url": "https://phonegap.com/"
+}, {
+  "category": "decades",
+  "name": "POV-Ray"
+}, {
+  "category": "decades",
+  "name": "[Novadigm] Radia",
+  "url": "https://en.wikipedia.org/wiki/HP_Client_Automation_Software"
+}, {
+  "category": "decades",
+  "name": "SAP NetWeaver Portal"
+}, {
+  "category": "decades",
+  "name": "Sass"
+}, {
+  "category": "decades",
+  "name": "SCO OpenServer"
+}, {
+  "category": "decades",
+  "name": "SilverStripe",
+  "url": "https://www.silverstripe.org"
+}, {
+  "category": "decades",
+  "name": "Slim",
+  "url": "https://www.slimframework.com/"
+}, {
+  "category": "decades",
+  "name": "SQL (Microsoft SQL Server, MySQL, and SQLite)",
+  "url": "https://en.wikipedia.org/wiki/SQL"
+}, {
+  "category": "decades",
+  "name": "Trello",
+  "url": "https://trello.com/"
+}, {
+  "category": "decades",
+  "name": "Turbo Pascal",
+  "url": "https://en.wikipedia.org/wiki/Turbo_Pascal"
+}, {
+  "category": "decades",
+  "name": "Twig",
+  "url": "https://twig.symfony.com/"
+}, {
+  "category": "decades",
+  "name": "Visual Basic",
+  "url": "https://en.wikipedia.org/wiki/Visual_Basic#1990s"
+}, {
+  "category": "decades",
+  "name": "Windows",
+  "url": "https://en.wikipedia.org/wiki/Windows_3.1x"
+}, {
+  "category": "decades",
+  "name": "Windows Workflow Foundation",
+  "url": "https://en.wikipedia.org/wiki/Windows_Workflow_Foundation"
+}, {
+  "category": "decades",
+  "name": "x86 assembly language"
+}]
