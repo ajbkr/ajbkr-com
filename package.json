@@ -2,7 +2,7 @@
   "name": "ajbkr-com",
   "version": "0.0.0",
   "engines": {
-    "node": "8.12.0",
+    "node": "10.15.3",
     "npm": "6.4.1"
   },
   "private": true,
@@ -14,7 +14,7 @@
     "minify-flat-icons": "cleancss -o public/stylesheets/flat-icons.min.css --skip-rebase node_modules/flat-social-icons/flat-icons.css",
     "postinstall": "npm run copy-fonts && npm run copy-milligram && npm run minify-flat-icons && npm run minify-normalize",
     "start": "node ./bin/www",
-    "test": "jasmine-node spec/*.spec.js",
+    "test": "jasmine",
     "watch": "DEBUG=ajbkr-com:* nodemon ./bin/www"
   },
   "dependencies": {
@@ -28,7 +28,7 @@
     "express-minify-html": "^0.12.0",
     "flat-social-icons": "0.0.1",
     "hbs": "~4.0.3",
-    "helmet": "^3.15.0",
+    "helmet": "^3.16.0",
     "milligram": "^1.2.0",
     "morgan": "~1.9.1",
     "normalize.css": "^8.0.1",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "eslint-plugin-html": "^5.0.3",
-    "jasmine-node": "^1.16.2",
+    "jasmine": "^3.3.1",
     "nodemon": "^1.18.9",
     "standard": "^12.0.1"
   }
