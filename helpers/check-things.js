@@ -4,7 +4,7 @@ module.exports = (function () {
   let cachedCheckedThings
   let timestamp
 
-  function checkThings (things, expires = 60 * 1000) {
+  function checkThings (things, expires = 60 * 60 * 1000 /* 1 hour */) {
     if (!cachedCheckedThings || (+new Date()) - timestamp > expires) {
       return checkLinks(
         things.map(thing => thing.url).filter(url => typeof url !== 'undefined')
