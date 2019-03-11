@@ -1,6 +1,9 @@
+Enforce sort order for navigation (Map maybe?)
+Unit tests for checkedThings (helpers/check-things.js?)
 Add links to relevant content elsewhere on the Internet
 Remove Milligram
 
++Cache checkLinks() results
 +Replace jasmine-node with jasmine (or some other unit testing framework)
 +Move getNavigation() into its own file (get-navigation.js) and add unit tests for it
 +BEMify header
