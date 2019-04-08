@@ -11,9 +11,11 @@ describe('helpers', function () {
       text: 'LinkedOut'
     }, {
       href: '/projects',
+      rank: 1,
       text: 'Projects'
     }, {
       href: '/about',
+      rank: 2,
       text: 'About'
     }]
 
@@ -40,6 +42,7 @@ describe('helpers', function () {
         {
           active: true,
           href: '/about',
+          rank: 2,
           text: 'About'
         }
       ]

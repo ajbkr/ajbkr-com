@@ -8,9 +8,11 @@ function getNavigation (url) {
     text: 'LinkedOut'
   }, {
     href: '/projects',
+    rank: 1,
     text: 'Projects'
   }, {
     href: '/about',
+    rank: 2,
     text: 'About'
   }]
 
@@ -22,7 +24,7 @@ function getNavigation (url) {
       ...activeNavigation,
       active: true
     }
-  ] : navigation
+  ].sort((o, p) => o.rank - p.rank) : navigation
 }
 
 module.exports = getNavigation
