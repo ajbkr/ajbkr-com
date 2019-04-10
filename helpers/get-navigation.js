@@ -7,12 +7,16 @@ function getNavigation (url) {
     href: '/linkedout',
     text: 'LinkedOut'
   }, {
-    href: '/projects',
+    href: '/finished',
     rank: 1,
+    text: 'Finished'
+  }, {
+    href: '/projects',
+    rank: 2,
     text: 'Projects'
   }, {
     href: '/about',
-    rank: 2,
+    rank: 3,
     text: 'About'
   }]
 

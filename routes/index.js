@@ -19,6 +19,19 @@ router.get('/', function (req, res, next) {
   })
 })
 
+router.get('/finished', function (req, res, next) {
+  res.render('finished', {
+    navigation: getNavigation(req.url),
+    production: res.app.get('env') === 'production',
+    quotation: {
+      attribution: 'Mark Twain',
+      text: 'Giving up smoking is the easiest thing in the world. I know ' +
+       "because I've done it thousands of times."
+    },
+    title: 'Finished'
+  })
+})
+
 router.get('/linkedout', function (req, res, next) {
   res.render('linkedout', {
     navigation: getNavigation(req.url),
