@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
+const { EXPIRES } = require('../config')
 const checkThings = require('../helpers/check-things')
 const getNavigation = require('../helpers/get-navigation')
 
@@ -86,7 +87,7 @@ router.get('/projects/electronics', function (req, res, next) {
 })
 
 router.get('/about', function (req, res, next) {
-  checkThings(things)
+  checkThings(things, EXPIRES)
     .then(checkedThings => {
       res.render('about', {
         navigation: getNavigation(req.url),
