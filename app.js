@@ -35,7 +35,6 @@ app.use(helmet())
 
 app.use('/', index)
 
-
 checkThings(things, EXPIRES)
   .then(() => {
     app.use('/about', about)
