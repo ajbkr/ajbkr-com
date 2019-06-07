@@ -1,3 +1,24 @@
+Restructure things.json so that "category" values become keys?
+  {
+    "decades": [{
+      "name": "AngularJS",
+      "url": "https://angularjs.org/"
+    }, {
+      // ...
+    }],
+    "home": [{
+      "name": "Arduino",
+      "url": "https://www.arduino.cc/"
+    }, {
+      // ...
+    }],
+    "work": [{
+      "name": "Backbone.js",
+      "url": "https://backbonejs.org/"
+    }, {
+      // ...
+    }]
+  }
 Retrieve navigation from navigation.json file
 Improve getNavigation() unit tests
 Unit tests for checkedThings (helpers/check-things.js?)
