@@ -116,7 +116,7 @@ pre {
                          "footer";
     grid-template-columns: 100%;
     grid-template-rows: 40px
-                        120px
+                        100px
                         1fr
                         40px
                         40px;
@@ -125,6 +125,10 @@ pre {
   .header__quotation {
     background-image: none;
     display: none;
+  }
+
+  .navigation {
+    columns: 2;
   }
 }
 
