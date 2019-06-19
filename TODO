@@ -1,3 +1,5 @@
+Add MQTT.js (or similar) and subscribe to ajbkr/feeds/flame-detector
+  Add public-facing dashboard?
 Restructure things.json so that "category" values become keys?
   {
     "decades": [{
