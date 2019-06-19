@@ -1,0 +1,25 @@
+[{
+  "hidden": true,
+  "href": "/linkedout",
+  "text": "LinkedOut"
+}, {
+  "hidden": true,
+  "href": "/personal-development",
+  "text": "Personal Development"
+}, {
+  "href": "/finished",
+  "rank": 1,
+  "text": "Finished"
+}, {
+  "href": "/projects",
+  "rank": 2,
+  "text": "Projects"
+}, {
+  "href": "/transformation",
+  "rank": 3,
+  "text": "Transformation"
+}, {
+  "href": "/about",
+  "rank": 4,
+  "text": "About"
+}]

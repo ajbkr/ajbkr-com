@@ -21,12 +21,12 @@ Restructure things.json so that "category" values become keys?
       // ...
     }]
   }
-Retrieve navigation from navigation.json file
-Improve getNavigation() unit tests
 Unit tests for checkedThings (helpers/check-things.js?)
 Add links to relevant content elsewhere on the Internet
 Remove Milligram
 
++Improve getNavigation() unit tests
++Retrieve navigation from navigation.json file
 +Split routes into separate files and serve "/" ASAP (defer "/about")
 +Enforce sort order for navigation (Map maybe?)
 +Cache checkLinks() results

@@ -3,26 +3,10 @@
 
 const getNavigation = require('../helpers/get-navigation')
 
+const defaultNavigation = require('../helpers/navigation.json')
+
 describe('helpers', function () {
   describe('getNavigation()', function () {
-    const defaultNavigation = [{
-      hidden: true,
-      href: '/linkedout',
-      text: 'LinkedOut'
-    }, {
-      href: '/finished',
-      rank: 1,
-      text: 'Finished'
-    }, {
-      href: '/projects',
-      rank: 2,
-      text: 'Projects'
-    }, {
-      href: '/about',
-      rank: 3,
-      text: 'About'
-    }]
-
     it('should return the default navigation for a URL of undefined',
       function () {
         expect(getNavigation()).toEqual(defaultNavigation)
@@ -46,7 +30,7 @@ describe('helpers', function () {
         {
           active: true,
           href: '/about',
-          rank: 3,
+          rank: 4,
           text: 'About'
         }
       ]

@@ -82,4 +82,17 @@ router.get('/projects/electronics', function (req, res, next) {
   })
 })
 
+router.get('/transformation', function (req, res, next) {
+  res.render('transformation', {
+    navigation: getNavigation(req.url),
+    production: res.app.get('env') === 'production',
+    quotation: {
+      attribution: 'Heraclitus',
+      text: 'You could not step twice into the same river; everything ' +
+       'changes and nothing stands still.'
+    },
+    title: 'Transformation'
+  })
+})
+
 module.exports = router
