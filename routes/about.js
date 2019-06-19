@@ -11,6 +11,7 @@ router.get('/', function (req, res, next) {
   checkThings(things, EXPIRES)
     .then(checkedThings => {
       res.render('about', {
+        gravatarImageUrl: req.app.locals.gravatarImageUrl,
         navigation: getNavigation(req.url),
         production: res.app.get('env') === 'production',
         quotation: {

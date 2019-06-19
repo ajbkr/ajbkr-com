@@ -6,6 +6,7 @@ const getNavigation = require('../helpers/get-navigation')
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('index', {
+    gravatarImageUrl: req.app.locals.gravatarImageUrl,
     navigation: getNavigation(req.url),
     production: res.app.get('env') === 'production',
     quotation: {
@@ -18,6 +19,7 @@ router.get('/', function (req, res, next) {
 
 router.get('/finished', function (req, res, next) {
   res.render('finished', {
+    gravatarImageUrl: req.app.locals.gravatarImageUrl,
     navigation: getNavigation(req.url),
     production: res.app.get('env') === 'production',
     quotation: {
@@ -31,6 +33,7 @@ router.get('/finished', function (req, res, next) {
 
 router.get('/linkedout', function (req, res, next) {
   res.render('linkedout', {
+    gravatarImageUrl: req.app.locals.gravatarImageUrl,
     navigation: getNavigation(req.url),
     production: res.app.get('env') === 'production',
     quotation: {
@@ -46,6 +49,7 @@ router.get('/linkedout', function (req, res, next) {
 
 router.get('/personal-development', function (req, res, next) {
   res.render('personal-development', {
+    gravatarImageUrl: req.app.locals.gravatarImageUrl,
     navigation: getNavigation(req.url),
     production: res.app.get('env') === 'production',
     quotation: {
@@ -59,6 +63,7 @@ router.get('/personal-development', function (req, res, next) {
 
 router.get('/projects', function (req, res, next) {
   res.render('projects/index', {
+    gravatarImageUrl: req.app.locals.gravatarImageUrl,
     navigation: getNavigation(req.url),
     production: res.app.get('env') === 'production',
     quotation: {
@@ -71,6 +76,7 @@ router.get('/projects', function (req, res, next) {
 
 router.get('/projects/electronics', function (req, res, next) {
   res.render('projects/electronics', {
+    gravatarImageUrl: req.app.locals.gravatarImageUrl,
     navigation: getNavigation(req.url),
     production: res.app.get('env') === 'production',
     quotation: {
@@ -84,6 +90,7 @@ router.get('/projects/electronics', function (req, res, next) {
 
 router.get('/transformation', function (req, res, next) {
   res.render('transformation', {
+    gravatarImageUrl: req.app.locals.gravatarImageUrl,
     navigation: getNavigation(req.url),
     production: res.app.get('env') === 'production',
     quotation: {

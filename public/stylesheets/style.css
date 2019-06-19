@@ -35,7 +35,10 @@ pre {
 .layout__header { grid-area: header; }
 .layout__left   { grid-area: left; }
 .layout__main   { grid-area: main; }
-.layout__right  { grid-area: right; }
+.layout__right  {
+  grid-area: right;
+  text-align: right;
+}
 
 .layout {
   display: grid;
@@ -108,6 +111,11 @@ pre {
   padding-bottom: 2px;
 }
 
+.avatar {
+  padding-right: 2rem;
+  padding-top: 0.4rem;
+}
+
 @media screen and (max-width: 639px) {
   .layout {
     grid-template-areas: "header"
@@ -130,6 +138,10 @@ pre {
 
   .navigation {
     columns: 2;
+  }
+
+  .avatar {
+    display: none;
   }
 }
 

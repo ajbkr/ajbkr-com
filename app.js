@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser')
 const compression = require('compression')
 const cookieParser = require('cookie-parser')
+const crypto = require('crypto')
 const express = require('express')
 const favicon = require('serve-favicon')
 const hbs = require('hbs')
@@ -32,6 +33,9 @@ app.use(cookieParser())
 app.get('env') === 'production' && app.use(minifyHTML({ override: true }))
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(helmet())
+
+app.locals.gravatarImageUrl = 'http://gravatar.com/avatar/' +
+ crypto.createHash('md5').update(process.env.EMAIL || '').digest('hex') + '?d=mp&s=80'
 
 app.use('/', index)
 
