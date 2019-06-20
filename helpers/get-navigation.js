@@ -1,4 +1,4 @@
-const navigation = require('./navigation.json')
+const navigation = require('../data/navigation.json')
 
 function getNavigation (url) {
   const activeNavigation = navigation.filter(o => o.href === url)[0]

@@ -3,7 +3,7 @@
 
 const getNavigation = require('../helpers/get-navigation')
 
-const defaultNavigation = require('../helpers/navigation.json')
+const defaultNavigation = require('../data/navigation.json')
 
 describe('helpers', function () {
   describe('getNavigation()', function () {

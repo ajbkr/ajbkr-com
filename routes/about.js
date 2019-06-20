@@ -5,7 +5,7 @@ const { EXPIRES } = require('../config')
 const checkThings = require('../helpers/check-things')
 const getNavigation = require('../helpers/get-navigation')
 
-const things = require('./things.json')
+const things = require('../data/things.json')
 
 router.get('/', function (req, res, next) {
   checkThings(things, EXPIRES)

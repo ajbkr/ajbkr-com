@@ -15,7 +15,7 @@ const checkThings = require('./helpers/check-things')
 const about = require('./routes/about')
 const index = require('./routes/index')
 
-const things = require('./routes/things.json')
+const things = require('./data/things.json')
 
 const app = express()
 

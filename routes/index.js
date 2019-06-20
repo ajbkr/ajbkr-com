@@ -3,7 +3,7 @@ const router = express.Router()
 
 const getNavigation = require('../helpers/get-navigation')
 
-const quotations = require('./quotations.json')
+const quotations = require('../data/quotations.json')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
