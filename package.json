@@ -10,8 +10,8 @@
     "copy-fonts": "cpx 'node_modules/flat-social-icons/fonts/*' public/stylesheets/fonts/",
     "copy-milligram": "cpx 'node_modules/milligram/dist/milligram.min.css*' public/stylesheets/",
     "lint": "standard --plugin html '**/*.hbs' '**/*.js' 'bin/www'",
-    "minify-normalize": "cleancss -o public/stylesheets/normalize.min.css node_modules/normalize.css/normalize.css",
     "minify-flat-icons": "cleancss -o public/stylesheets/flat-icons.min.css --skip-rebase node_modules/flat-social-icons/flat-icons.css",
+    "minify-normalize": "cleancss -o public/stylesheets/normalize.min.css node_modules/normalize.css/normalize.css",
     "postinstall": "npm run copy-fonts && npm run copy-milligram && npm run minify-flat-icons && npm run minify-normalize",
     "start": "node ./bin/www",
     "test": "jasmine",
@@ -36,7 +36,7 @@
     "serve-favicon": "~2.5.0"
   },
   "devDependencies": {
-    "eslint-plugin-html": "^5.0.5",
+    "eslint-plugin-html": "^6.0.0",
     "jasmine": "^3.4.0",
     "nodemon": "^1.19.1",
     "standard": "^12.0.1"
