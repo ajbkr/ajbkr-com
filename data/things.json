@@ -1,15 +1,11 @@
 [{
   "category": "work",
-  "name": "Backbone.js",
-  "url": "https://backbonejs.org/"
+  "name": "ASP.NET Core",
+  "url": "https://docs.microsoft.com/en-us/aspnet/core/"
 }, {
   "category": "work",
-  "name": "Django",
-  "url": "https://www.djangoproject.com/"
-}, {
-  "category": "work",
-  "name": "FreeBSD",
-  "url": "https://www.freebsd.org/"
+  "name": "Azure DevOps",
+  "url": "https://azure.microsoft.com/en-gb/services/devops/"
 }, {
   "category": "work",
   "name": "Git",
@@ -19,40 +15,23 @@
   "name": "Gulp"
 }, {
   "category": "work",
-  "name": "JavaScript",
-  "url": "https://en.wikipedia.org/wiki/JavaScript"
-}, {
-  "category": "work",
-  "name": "Jest",
-  "url": "https://jestjs.io/"
-}, {
-  "category": "work",
-  "name": "Jira",
-  "url": "https://en.wikipedia.org/wiki/Jira_(software)"
-}, {
-  "category": "work",
-  "name": "PostgreSQL",
-  "url": "https://www.postgresql.org/"
-}, {
-  "category": "work",
-  "name": "Python",
-  "url": "https://www.python.org/"
-}, {
-  "category": "work",
-  "name": "React"
-}, {
-  "category": "work",
-  "name": "Redux"
+  "name": "Sass",
+  "url": "https://sass-lang.com/"
 }, {
   "category": "work",
   "name": "tmux",
   "url": "https://github.com/tmux/tmux/wiki"
 }, {
   "category": "work",
+  "name": "TypeScript",
+  "url": "https://www.typescriptlang.org/"
+}, {
+  "category": "work",
   "name": "Vim"
 }, {
   "category": "work",
-  "name": "webpack"
+  "name": "Vue.js",
+  "url": "https://vuejs.org/"
 }, {
   "category": "home",
   "name": "Arduino",
@@ -65,17 +44,39 @@
   "name": "C/C++"
 }, {
   "category": "home",
+  "name": "Django",
+  "url": "https://www.djangoproject.com/"
+}, {
+  "category": "home",
   "name": "Express"
 }, {
   "category": "home",
   "name": "GNU/Linux"
 }, {
   "category": "home",
+  "name": "JavaScript",
+  "url": "https://en.wikipedia.org/wiki/JavaScript"
+}, {
+  "category": "home",
   "name": "Node.js"
+}, {
+  "category": "home",
+  "name": "PostgreSQL",
+  "url": "https://www.postgresql.org/"
 }, {
   "category": "home",
   "name": "Postman",
   "url": "https://www.getpostman.com/"
+}, {
+  "category": "home",
+  "name": "Python",
+  "url": "https://www.python.org/"
+}, {
+  "category": "home",
+  "name": "React"
+}, {
+  "category": "home",
+  "name": "Redux"
 }, {
   "category": "home",
   "name": "SDL"
@@ -89,6 +90,10 @@
 }, {
   "category": "decades",
   "name": "awk"
+}, {
+  "category": "decades",
+  "name": "Backbone.js",
+  "url": "https://backbonejs.org/"
 }, {
   "category": "decades",
   "name": "BASIC"
@@ -115,16 +120,20 @@
   "url": "https://en.wikipedia.org/wiki/Amstrad_PCW#CP/M_operating_system_and_applications"
 }, {
   "category": "decades",
-  "name": "Ext JS"
-}, {
-  "category": "decades",
   "name": "DataFlex"
 }, {
   "category": "decades",
   "name": "Delphi"
 }, {
   "category": "decades",
+  "name": "Ext JS"
+}, {
+  "category": "decades",
   "name": "Forth"
+}, {
+  "category": "decades",
+  "name": "FreeBSD",
+  "url": "https://www.freebsd.org/"
 }, {
   "category": "decades",
   "name": "GIMP"
@@ -137,6 +146,14 @@
 }, {
   "category": "decades",
   "name": "Java"
+}, {
+  "category": "decades",
+  "name": "Jest",
+  "url": "https://jestjs.io/"
+}, {
+  "category": "decades",
+  "name": "Jira",
+  "url": "https://en.wikipedia.org/wiki/Jira_(software)"
 }, {
   "category": "decades",
   "name": "Kermit",
@@ -195,9 +212,6 @@
   "name": "SAP NetWeaver Portal"
 }, {
   "category": "decades",
-  "name": "Sass"
-}, {
-  "category": "decades",
   "name": "SCO OpenServer"
 }, {
   "category": "decades",
@@ -227,6 +241,9 @@
   "category": "decades",
   "name": "Visual Basic",
   "url": "https://en.wikipedia.org/wiki/Visual_Basic#1990s"
+}, {
+  "category": "decades",
+  "name": "webpack"
 }, {
   "category": "decades",
   "name": "Windows",
