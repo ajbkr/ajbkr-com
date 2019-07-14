@@ -35,10 +35,7 @@ pre {
 .layout__header { grid-area: header; }
 .layout__left   { grid-area: left; }
 .layout__main   { grid-area: main; }
-.layout__right  {
-  grid-area: right;
-  text-align: right;
-}
+.layout__right  { grid-area: right; }
 
 .layout {
   display: grid;
@@ -111,9 +108,20 @@ pre {
   padding-bottom: 2px;
 }
 
-.avatar {
-  padding-right: 2rem;
+.profile {
+  text-align: center;
+}
+
+.profile__avatar {
   padding-top: 0.4rem;
+}
+
+.profile__fullname {
+  margin: 0;
+}
+
+.profile__username {
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 639px) {
@@ -140,7 +148,7 @@ pre {
     columns: 2;
   }
 
-  .avatar {
+  .profile {
     display: none;
   }
 }
