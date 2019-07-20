@@ -1,22 +1,50 @@
-/* Override Milligram */
+/* Custom page CSS (sticky-footer-navbar.css)
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+  /*padding: 60px 15px 0;*/
+  padding: 10px 15px 0;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/* Override Bootstrap */
+a,
+a:active,
+a:visited,
+a.header__title.navbar-brand,
+a.header__title.navbar-brand:active,
+a.header__title.navbar-brand:visited {
+  color: #9b4dca;
+}
+
+a:hover,
+a.header__title.navbar-brand:hover {
+  color: hsl(277, 54%, 40%);
+  text-decoration: none;
+}
+
 hr {
   border-top: 0.1rem solid #d9dcdf;
 }
 
-.container {
-  max-width: none;
-}
-
-a:hover,
-.navigation a.button:hover {
-  color: hsl(277, 54%, 40%);
+ul {
+  list-style: circle;
 }
 
 /* Site defaults */
-body {
-  padding: 2.4rem 0;
-}
-
 pre {
   overflow: auto;
 }
@@ -27,26 +55,9 @@ pre {
 }
 
 /* Holy grail layout */
-.layout__footer {
-  font-size: 1rem;
-  grid-area: footer;
+.footer {
+  font-size: 0.75rem;
   text-align: center;
-}
-.layout__header { grid-area: header; }
-.layout__left   { grid-area: left; }
-.layout__main   { grid-area: main; }
-.layout__right  { grid-area: right; }
-
-.layout {
-  display: grid;
-  grid-template-areas: "header header header"
-                       "left main right"
-                       "footer footer footer";
-  grid-template-columns: 160px 1fr 160px;
-  grid-template-rows: 200px
-                      1fr
-                      40px;
-  min-height: 100vh;
 }
 
 /* Header and social icons */
@@ -57,15 +68,16 @@ pre {
 }
 
 .social-icons {
+  flex-direction: row;
   font-family: flat-icons;
-  list-style: none;
 }
 
 .social-icons__list-item {
-  display: inline;
-  padding-left: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
+/* Quotation */
 .header__quotation {
   background-image: url(https://res.cloudinary.com/ipseity/image/upload/v1531754646/1500x500_c3qo0e.jpg);
   background-position: 0 -30px;
@@ -74,15 +86,18 @@ pre {
   color: #ddd;
   font-family: "Times New Roman", serif;
   height: 140px;
+  margin-top: 48px;
   position: relative;
 }
 
 .quotation__blockquote {
   background-color: rgba(0, 0, 0, 0.5);
+  border-left: 0.3rem solid #d1d1d1;
   bottom: 1rem;
   display: inline-block;
   left: 2rem;
   margin: 0;
+  padding: 0.5rem 1.5rem;
   position: absolute;
   text-shadow: 1px 1px 1px #000;
 }
@@ -93,19 +108,9 @@ pre {
 
 .quotation__attribution {
   color: #ca9b4d;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
+  margin-bottom: 0;
   text-align: right;
-}
-
-.navigation {
-  list-style: none;
-  padding-top: 0.4rem;
-  padding-left: 2rem;
-}
-
-.navigation__item--active {
-  border-bottom: 1px dotted;
-  padding-bottom: 2px;
 }
 
 .profile {
@@ -121,35 +126,25 @@ pre {
 }
 
 .profile__username {
-  font-size: 1.2rem;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 639px) {
-  .layout {
-    grid-template-areas: "header"
-                         "left"
-                         "main"
-                         "right"
-                         "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 40px
-                        100px
-                        1fr
-                        40px
-                        40px;
+  .quotation__blockquote {
+    display: none;
   }
+}
 
+@media screen and (max-width: 479px) {
   .header__quotation {
-    background-image: none;
-    display: none;
-  }
-
-  .navigation {
-    columns: 2;
-  }
-
-  .profile {
-    display: none;
+    background-position: 0 -15px;
+    height: 120px;
   }
 }
 
@@ -159,13 +154,13 @@ pre {
 }
 
 .intro__name {
-  font-size: 3.6rem;
+  font-size: 3.6rem;  /* XXX */
 }
 
 .experience__title,
 .education__school,
 .volunteer-experience__role {
-  font-size: 2.2rem;
+  font-size: 2.2rem;  /* XXX */
 }
 
 .intro__headline,

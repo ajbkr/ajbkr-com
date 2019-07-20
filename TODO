@@ -1,3 +1,4 @@
+Fix "active" style on nav menu
 Add MQTT.js (or similar) and subscribe to ajbkr/feeds/flame-detector
   Add public-facing dashboard?
 Restructure things.json so that "category" values become keys?
@@ -23,8 +24,8 @@ Restructure things.json so that "category" values become keys?
   }
 Unit tests for checkedThings (helpers/check-things.js?)
 Add links to relevant content elsewhere on the Internet
-Remove Milligram
 
++Remove Milligram (replace with Bootstrap)
 +Improve getNavigation() unit tests
 +Retrieve navigation from navigation.json file
 +Split routes into separate files and serve "/" ASAP (defer "/about")

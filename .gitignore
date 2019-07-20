@@ -30,10 +30,14 @@ node_modules
 npm-debug.log
 
 # Copied CSS
+public/stylesheets/bootstrap.min.css*
 public/stylesheets/fonts
 public/stylesheets/flat-icons.min.css
-public/stylesheets/milligram.min.css*
-public/stylesheets/normalize.min.css
+
+# Copied JS
+public/scripts/bootstrap.min.js*
+public/scripts/jquery.min.*
+public/scripts/popper.min.js*
 
 # Vim swap files
 *.swp
