@@ -8,6 +8,10 @@
   "url": "https://azure.microsoft.com/en-gb/services/devops/"
 }, {
   "category": "work",
+  "name": "Bootstrap",
+  "url": "https://getbootstrap.com/"
+}, {
+  "category": "work",
   "name": "Git",
   "url": "https://git-scm.com/"
 }, {
@@ -44,10 +48,6 @@
   "name": "C/C++"
 }, {
   "category": "home",
-  "name": "Django",
-  "url": "https://www.djangoproject.com/"
-}, {
-  "category": "home",
   "name": "Express"
 }, {
   "category": "home",
@@ -67,16 +67,6 @@
   "category": "home",
   "name": "Postman",
   "url": "https://www.getpostman.com/"
-}, {
-  "category": "home",
-  "name": "Python",
-  "url": "https://www.python.org/"
-}, {
-  "category": "home",
-  "name": "React"
-}, {
-  "category": "home",
-  "name": "Redux"
 }, {
   "category": "home",
   "name": "SDL"
@@ -124,6 +114,10 @@
 }, {
   "category": "decades",
   "name": "Delphi"
+}, {
+  "category": "decades",
+  "name": "Django",
+  "url": "https://www.djangoproject.com/"
 }, {
   "category": "decades",
   "name": "Ext JS"
@@ -205,8 +199,18 @@
   "name": "POV-Ray"
 }, {
   "category": "decades",
+  "name": "Python",
+  "url": "https://www.python.org/"
+}, {
+  "category": "decades",
   "name": "[Novadigm] Radia",
   "url": "https://en.wikipedia.org/wiki/HP_Client_Automation_Software"
+}, {
+  "category": "decades",
+  "name": "React"
+}, {
+  "category": "decades",
+  "name": "Redux"
 }, {
   "category": "decades",
   "name": "SAP NetWeaver Portal"
