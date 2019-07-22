@@ -1,3 +1,4 @@
+Migrate away from cpx; use a module bundler like Parcel or webpack
 Fix "active" style on nav menu
 Add MQTT.js (or similar) and subscribe to ajbkr/feeds/flame-detector
   Add public-facing dashboard?
