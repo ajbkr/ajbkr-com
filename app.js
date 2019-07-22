@@ -7,7 +7,7 @@ const favicon = require('serve-favicon')
 const hbs = require('hbs')
 const helmet = require('helmet')
 const logger = require('morgan')
-const minifyHTML = require('express-minify-html')
+const minifyHTML = require('express-minify-html-2')
 const path = require('path')
 
 const { EXPIRES } = require('./config')

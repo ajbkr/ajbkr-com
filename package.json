@@ -11,7 +11,7 @@
     "copy-bootstrap:css": "cpx 'node_modules/bootstrap/dist/css/bootstrap.min.css*' public/stylesheets/",
     "copy-bootstrap:js": "cpx 'node_modules/bootstrap/dist/js/bootstrap.min.js*' public/scripts/",
     "copy-fonts": "cpx 'node_modules/flat-social-icons/fonts/*' public/stylesheets/fonts/",
-    "copy-jquery": "cpx 'node_modules/jquery/jquery.min.{js,map}' public/scripts/",
+    "copy-jquery": "cpx 'node_modules/jquery/dist/jquery.min.{js,map}' public/scripts/",
     "copy-popper": "cpx 'node_modules/popper.js/dist/umd/popper.min.js*' public/scripts/",
     "lint": "standard --plugin html '**/*.hbs' '**/*.js' 'bin/www'",
     "minify-flat-icons": "cleancss -o public/stylesheets/flat-icons.min.css --skip-rebase node_modules/flat-social-icons/flat-icons.css",
@@ -30,11 +30,11 @@
     "cookie-parser": "~1.4.4",
     "debug": "^4.1.1",
     "express": "^4.17.1",
-    "express-minify-html": "^0.12.0",
+    "express-minify-html-2": "^1.0.1",
     "flat-social-icons": "0.0.1",
     "hbs": "^4.0.4",
     "helmet": "^3.19.0",
-    "jquery": "^1.9.1",
+    "jquery": "^3.4.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.15.0",
     "serve-favicon": "~2.5.0"
@@ -43,6 +43,6 @@
     "eslint-plugin-html": "^6.0.0",
     "jasmine": "^3.4.0",
     "nodemon": "^1.19.1",
-    "standard": "^13.0.2"
+    "standard": "^13.1.0"
   }
 }
