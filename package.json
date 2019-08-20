@@ -43,6 +43,6 @@
     "eslint-plugin-html": "^6.0.0",
     "jasmine": "^3.4.0",
     "nodemon": "^1.19.1",
-    "standard": "^13.1.0"
+    "standard": "^14.0.0"
   }
 }
