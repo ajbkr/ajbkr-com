@@ -24,7 +24,7 @@
     "@mvnu/cpx": "^1.5.2",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
-    "check-links": "^1.1.7",
+    "check-links": "^1.1.8",
     "clean-css-cli": "^4.3.0",
     "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
@@ -33,7 +33,7 @@
     "express-minify-html-2": "^1.0.1",
     "flat-social-icons": "0.0.1",
     "hbs": "^4.0.4",
-    "helmet": "^3.20.0",
+    "helmet": "^3.21.0",
     "jquery": "^3.4.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.15.0",
@@ -42,7 +42,7 @@
   "devDependencies": {
     "eslint-plugin-html": "^6.0.0",
     "jasmine": "^3.4.0",
-    "nodemon": "^1.19.1",
-    "standard": "^14.0.0"
+    "nodemon": "^1.19.2",
+    "standard": "^14.3.0"
   }
 }
