@@ -4,107 +4,134 @@
   <p>
     Instruction set summary for the 16-bit Intel 8086 microprocessor:
   </p>
-  <table style="width: 100%">
-    <thead>
-      <tr>
-        <th class="instruction-set-summary__header">Mnemonic</th>
-        <th class="instruction-set-summary__header">Description</th>
-        <th>Instruction Code</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><em>Data Transfer</em></td>
-        <td />
-        <td />
-      </tr>
+  <div class="container">
+    <div class="row font-weight-bold">
+      <div class="col-2">
+        Mnemonic
+      </div>
+      <div class="col-2">
+        Description
+      </div>
+      <div class="col">
+        Instruction Code
+      </div>
+    </div>
 
-      <tr><td /><td /><td /></tr>
+    <div class="row py-2">
+      <div class="col-2">
+        <em>Data Transfer</em>
+      </div>
+    </div>
 
-      <tr>
-        <td>MOV</td>
-        <td>Move:</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0</pre>
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td>Register/Memory to/from Register</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>1 0 0 0 1 0 d w  mod  reg   r/m</pre>
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td>Immediate to Register/Memory</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>1 1 0 0 0 1 1 w  mod 0 0 0  r/m        data         data if w = 1</pre>
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td>Immediate to Register</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>1 0 1 1 w  reg        data             data</pre>
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td>Memory to Accumulator</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>1 0 1 0 0 0 0 w     addr-low         addr-high</pre>
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td>Register/Memory to Segment Register</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>1 0 0 0 1 1 1 0  mod 0 reg  r/m</pre>
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td>Segment Register to Register/Memory</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>1 0 0 0 1 1 0 0  mod 0 reg  r/m</pre>
-        </td>
-      </tr>
+    <div class="row py-1">
+      <div class="col-2">
+        MOV
+      </div>
+      <div class="col-2">
+        Move:
+      </div>
+      <div class="col">
+        <pre>7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        Register/Memory to/from Register
+      </div>
+      <div class="col">
+        <pre>1 0 0 0 1 0 d w  mod  reg   r/m</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        Immediate to Register/Memory
+      </div>
+      <div class="col">
+        <pre>1 1 0 0 0 1 1 w  mod 0 0 0  r/m        data         data if w = 1</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        Immediate to Register
+      </div>
+      <div class="col">
+        <pre>1 0 1 1 w  reg        data             data</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        Memory to Accumulator
+      </div>
+      <div class="col">
+        <pre>1 0 1 0 0 0 0 w     addr-low         addr-high</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        Register/Memory to Segment Register
+      </div>
+      <div class="col">
+        <pre>1 0 0 0 1 1 1 0  mod 0 reg  r/m</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        Segment Register to Register/Memory
+      </div>
+      <div class="col">
+        <pre>1 0 0 0 1 1 0 0  mod 0 reg  r/m</pre>
+      </div>
+    </div>
 
-      <tr><td /><td /><td /></tr>
+    <div class="row py-1">
+      <div class="col-2">
+        PUSH
+      </div>
+      <div class="col-2">
+        Push:
+      </div>
+      <div class="col">
+        <pre>7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        Register/Memory
+      </div>
+      <div class="col">
+        <pre>1 1 1 1 1 1 1 1  mod 1 1 0  r/m</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        Register
+      </div>
+      <div class="col">
+        <pre>0 1 0 1 0  reg</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        Segment Register
+      </div>
+      <div class="col">
+        <pre>0 0 0 reg 1 1 0</pre>
+      </div>
+    </div>
 
-      <tr>
-        <td>PUSH</td>
-        <td>Push:</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0</pre>
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td>Register/Memory</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>1 1 1 1 1 1 1 1  mod 1 1 0  r/m</pre>
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td>Register</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>0 1 0 1 0  reg</pre>
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td>Segment Register</td>
-        <td class="instruction-set-summary__instruction-code">
-          <pre>0 0 0 reg 1 1 0</pre>
-        </td>
-      </tr>
-
-      <tr><td /><td /><td /></tr>
-
-      <tr><td>...</td><td /><td /></tr>
-    </tbody>
-  </table>
+    <div class="row py-1">
+      <div class="col-2">
+        ...
+      </div>
+    </div>
+  </div>
 </div>
