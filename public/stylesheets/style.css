@@ -36,7 +36,7 @@ a.header__title.navbar-brand:hover {
   text-decoration: none;
 }
 
-body {
+body, pre {
   color: #606c76;
 }
 
@@ -51,7 +51,10 @@ ul {
 
 /* Site defaults */
 pre {
+  background-color: #d9dcdf;
+  margin-bottom: 0;
   overflow: auto;
+  padding: 1px;
 }
 
 /* Pre-holy grail layout */
@@ -186,4 +189,13 @@ pre {
 .certification__credential-id,
 .certification__issuing-organisation {
   color: hsl(207, 10%, 52%);
+}
+
+/* Instruction set summary */
+.instruction-set-summary__header {
+  width: 20%;
+}
+
+.instruction-set-summary__instruction-code {
+  vertical-align: top;
 }

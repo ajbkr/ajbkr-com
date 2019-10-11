@@ -65,6 +65,18 @@ router.get('/projects', function (req, res, next) {
   })
 })
 
+router.get('/projects/assembly-language', function (req, res, next) {
+  const quotation = quotations[req.url]
+
+  res.render('projects/assembly-language', {
+    gravatarImageUrl: req.app.locals.gravatarImageUrl,
+    navigation: getNavigation(req.url),
+    production: res.app.get('env') === 'production',
+    quotation,
+    title: 'Assembly Language - Projects'
+  })
+})
+
 router.get('/projects/electronics', function (req, res, next) {
   const quotation = quotations[req.url]
 

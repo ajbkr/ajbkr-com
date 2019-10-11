@@ -1,0 +1,110 @@
+<div class="container">
+  <h1>{{title}}</h1>
+  <h2>8086</h2>
+  <p>
+    Instruction set summary for the 16-bit Intel 8086 microprocessor:
+  </p>
+  <table style="width: 100%">
+    <thead>
+      <tr>
+        <th class="instruction-set-summary__header">Mnemonic</th>
+        <th class="instruction-set-summary__header">Description</th>
+        <th>Instruction Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>Data Transfer</em></td>
+        <td />
+        <td />
+      </tr>
+
+      <tr><td /><td /><td /></tr>
+
+      <tr>
+        <td>MOV</td>
+        <td>Move:</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0</pre>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>Register/Memory to/from Register</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>1 0 0 0 1 0 d w  mod  reg   r/m</pre>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>Immediate to Register/Memory</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>1 1 0 0 0 1 1 w  mod 0 0 0  r/m        data         data if w = 1</pre>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>Immediate to Register</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>1 0 1 1 w  reg        data             data</pre>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>Memory to Accumulator</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>1 0 1 0 0 0 0 w     addr-low         addr-high</pre>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>Register/Memory to Segment Register</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>1 0 0 0 1 1 1 0  mod 0 reg  r/m</pre>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>Segment Register to Register/Memory</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>1 0 0 0 1 1 0 0  mod 0 reg  r/m</pre>
+        </td>
+      </tr>
+
+      <tr><td /><td /><td /></tr>
+
+      <tr>
+        <td>PUSH</td>
+        <td>Push:</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0  7 6 5 4 3 2 1 0</pre>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>Register/Memory</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>1 1 1 1 1 1 1 1  mod 1 1 0  r/m</pre>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>Register</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>0 1 0 1 0  reg</pre>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>Segment Register</td>
+        <td class="instruction-set-summary__instruction-code">
+          <pre>0 0 0 reg 1 1 0</pre>
+        </td>
+      </tr>
+
+      <tr><td /><td /><td /></tr>
+
+      <tr><td>...</td><td /><td /></tr>
+    </tbody>
+  </table>
+</div>
