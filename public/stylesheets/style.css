@@ -190,12 +190,3 @@ pre {
 .certification__issuing-organisation {
   color: hsl(207, 10%, 52%);
 }
-
-/* Instruction set summary */
-.instruction-set-summary__header {
-  width: 20%;
-}
-
-.instruction-set-summary__instruction-code {
-  vertical-align: top;
-}
